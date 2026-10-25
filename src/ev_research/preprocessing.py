@@ -3,6 +3,7 @@ import unicodedata
 import numpy as np
 import pandas as pd
 
+
 def normalized(value):
     '''Normalize accent, punctuation spacing, and case.'''
     if value is None or pd.isna(value):
@@ -10,8 +11,10 @@ def normalized(value):
     value = unicodedata.normalize('NFKD', str(value).strip().casefold())
     return ''.join(c for c in value if not unicodedata.combining(c))
 
+
 def _dense(value):
     return re.sub(r'\s+', '', normalized(value).replace('–', '-').replace('—', '-'))
+
 
 def binary_response(value, kind):
     answer = normalized(value)
@@ -25,12 +28,14 @@ def binary_response(value, kind):
         return 0.0
     return np.nan
 
+
 def firm_size(value):
     answer = normalized(value)
     for token, category in (('pequena', 'Small'), ('mediana', 'Medium'), ('grande', 'Large')):
         if token in answer:
             return category, 'mapped'
-        return np.nan, 'missing' if not answer else 'unclassified'
+    return np.nan, 'missing' if not answer else 'unclassified'
+
 
 def fleet_size(value):
     answer = _dense(value)
@@ -68,7 +73,6 @@ def vehicle_type(value):
 
 
 def daily_distance(value):
-    '''Never treat distance per route/trip as daily kilometers.'''
     answer = _dense(value)
     if not answer:
         return np.nan, 'missing'
@@ -136,7 +140,6 @@ CLEANERS = {
 
 
 def apply_cleaners(data, source_indices):
-    '''Attach canonical values and per-variable quality flags to an eligible copy.'''
     result = data.copy()
     for key, cleaner in CLEANERS.items():
         original = result.iloc[:, source_indices[key]]

@@ -8,9 +8,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 RAW_CSV = ROOT / 'data' / 'raw' / 'survey_source.csv'
 PROCESSED = ROOT / 'data' / 'processed'
-OUTPUTS = ROOT / 'project_management' / 'reports'
-TABLES = ROOT / OUTPUTS / 'tables'
-FIGURES = ROOT / OUTPUTS / 'figures'
+OUTPUTS = ROOT / 'project-management' / 'reports'
+TABLES = OUTPUTS / 'tables'
+FIGURES = OUTPUTS / 'figures'
 
 # Column indices refer to the original 34-column questionnaire.
 SOURCE_INDEX = {
@@ -30,10 +30,12 @@ TARGETS = ('ev_use', 'ev_consideration')
 DEFAULT_SEEDS = (17, 42, 123)
 
 PALETTE = {
-    'navy': '#123B63', 'blue': '#2367A0', 'medium': '#438ECD',
-    'light': '#A9D0EF', 'pale': '#EAF3FA', 'ink': '#192B3A',
-    'gray': '#697B8C', 'grid': '#DCE6EF', 'white': '#FFFFFF'}
+    'navy': '#1e3453', 'blue': '#1e3453', 'medium': '#6d88a6',
+    'light': '#a3b7d5', 'pale': '#dbe6f0', 'ink': '#1e3453',
+    'gray': '#61748b', 'grid': '#dee6ec', 'white': '#FFFFFF',
+    'accent': '#cea64d', 'warn': '#cea64d', 'neutral': '#6d88a6',
+    'cream': '#f9f0e1', 'offwhite': '#fdfbf7', 'gold': '#cea64d'}
 
 def ensure_directories():
     for path in (PROCESSED, TABLES, FIGURES):
-        path.mkdir(parents=True, exist_ok=True)
+        path.mkdir(parents = True, exist_ok = True)
