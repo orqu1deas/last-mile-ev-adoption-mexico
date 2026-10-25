@@ -3,62 +3,272 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Scientific poster about electric vehicle adoption in Mexico's last-mile logistics and ridesharing sectors."
+    />
+    <title>Electromobility in Mexico | Research Poster</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Electromobility in Mexico</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
   </head>
   <body>
     <div class="container">
-      <header class="section-title">
-        <div>
-          <img class="itesm-logo" src="../../../../assets/logo_ITESM.svg" />
+      <header class="poster-header">
+        <div class="brand">
+          <img
+            class="itesm-logo"
+            src="../../../../assets/logo_ITESM.svg"
+            alt="Tecnológico de Monterrey"
+          />
+          <span>School of Engineering<br />and Sciences</span>
         </div>
-
-        <div class="title">
-          <h1 class="heading-primary">
-            Electromobility in Mexico: EV Adoption in Last-Mile Logistics
-          </h1>
-          <h3 class="heading-tertiary">
-            Gomez Pantoja, <span>Kira Darian</span>
-          </h3>
+        <div class="title-text">
+          <!-- <p class="eyebrow">Research poster · Mexico City</p> -->
+          <h1>Electromobility in Mexico: EV Adoption in Last-Mile Logistics</h1>
+          <p class="authors"><strong>Kira Darian</strong><sup>1</sup></p>
+          <p class="department">
+            <sup>1</sup>Tecnológico de Monterrey · School of Engineering and
+            Sciences
+          </p>
         </div>
-
-        <div>
-          <img class="itesm-logo" src="../../../../assets/logo_ITESM.svg" />
+        <div class="header-detail">
+          <span>RESEARCH PROJECT</span><strong>EV / MX</strong
+          ><small>Last-mile mobility</small>
         </div>
       </header>
-      <article class="grid grid--3-cols">
+
+      <main class="poster-grid">
         <div class="column">
-          <div class="section section-introduction">
-            <h2 class="heading-secondary">Introduction</h2>
+          <section class="section">
+            <div class="section-header">
+              <h2 class="heading-secondary">01 · Research question</h2>
+            </div>
             <div class="section-content">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facilis atque totam officia, odio commodi vitae reiciendis est
-                voluptatum, provident tempora qui soluta, dolorum molestiae
-                recusandae placeat quod adipisci dolore accusantium?
+                Which operational and business characteristics are associated
+                with current EV use and consideration of adoption among Mexican
+                small-cargo operators?
+              </p>
+              <div class="highlight">
+                <strong>Why this matters</strong>
+                <p>
+                  Interest in electrification is not the same as having an
+                  electric vehicle in service. Distinguishing the two is
+                  essential for targeted fleet-transition strategies.
+                </p>
+              </div>
+              <p class="micro">Scope: eligible small-cargo firms.</p>
+            </div>
+          </section>
+
+          <section class="section section--cream">
+            <div class="section-header">
+              <h2 class="heading-secondary">02 · Data &amp; Methodology</h2>
+            </div>
+            <div class="section-content">
+              <p>
+                Out of 105 total survey submissions (representing 92 distinct
+                rows and 62 eligible operators), sample sizes varied across
+                questions because missing responses were excluded on a
+                per-question basis.
+              </p>
+              <div class="workflow">
+                <div class="step">
+                  <span>01</span><i data-lucide="book-open-text"></i>
+                  <h3>Audit</h3>
+                  <p>
+                    Remove exact duplicates, apply eligibility rules, flag
+                    ambiguous answers, preserve originals.
+                  </p>
+                </div>
+                <div class="step">
+                  <span>02</span><i data-lucide="chart-no-axes-combined"></i>
+                  <h3>Description</h3>
+                  <p>
+                    Question-specific rates, perceived barriers, firm and fleet
+                    characteristics.
+                  </p>
+                </div>
+                <div class="step">
+                  <span>03</span><i data-lucide="brain-circuit"></i>
+                  <h3>Model</h3>
+                  <p>
+                    Binary classifiers for EV use and EV consideration;
+                    stratified nested validation across three split seeds.
+                  </p>
+                </div>
+              </div>
+              <p class="footnote">
+                Insights are intended to inform business-model and policy
+                recommendations.
               </p>
             </div>
-          </div>
-          <div class="section section-methods">
-            <h2 class="heading-secondary">Methods</h2>
-            <div class="section-content grid grid--3-cols">
-              <div class="chevron-box chevron-inner">
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="section">
+            <div class="section-header">
+              <h2 class="heading-secondary">03 · Adoption–consideration gap</h2>
+            </div>
+            <div class="section-content">
+              <div class="twostat">
+                <div><strong>25.0%</strong><span>currently use EVs</span></div>
+                <div><strong>57.6%</strong><span>considered EVs</span></div>
+              </div>
+              <figure class="poster-figure">
+                <img
+                  src="assets/adoption_outcomes.svg"
+                  alt="Survey shares for current EV use (15 of 60) and EV consideration (34 of 59)"
+                />
+              </figure>
+              <div class="highlight pale">
+                <strong>Consideration among non-users</strong>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Necessitatibus deserunt iusto explicabo aliquid, repudiandae.
+                  Of the 44 responding operators not currently using EVs,
+                  <strong>19 (43.2%)</strong> had considered them. This is a
+                  subgroup, not an estimated adoption-conversion rate.
                 </p>
               </div>
             </div>
-          </div>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h2 class="heading-secondary">
+                04 · Perceived barriers & benefits
+              </h2>
+            </div>
+
+            <div class="section-content">
+              <div class="segment">
+                <span class="segment-icon">
+                  <i data-lucide="thumbs-up"></i>
+                </span>
+                <div>
+                  <h3>Perceived Advantages</h3>
+                  <p>
+                    <strong>Lower emissions (59.3%):</strong>
+                    Reduced tailpipe pollution and
+                    <strong>Operating-cost savings (50.8%):</strong>
+                    Potential reductions in energy and maintenance expenses.
+                  </p>
+                </div>
+              </div>
+
+              <div class="segment">
+                <span class="segment-icon">
+                  <i data-lucide="alert-triangle"></i>
+                </span>
+                <div>
+                  <h3>Perceived Disadvantages</h3>
+                  <p>
+                    <strong>Charging infrastructure (52.5%):</strong>
+                    Limited availability, accessibility, and charging capacity
+                    and
+                    <strong>Driving range (45.8%):</strong>
+                    Concerns about route coverage, battery autonomy, and
+                    operational interruptions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </article>
+
+        <div class="column">
+          <section class="section">
+            <div class="section-header">
+              <h2 class="heading-secondary">
+                05 · Exploratory predictive evidence
+              </h2>
+            </div>
+            <div class="section-content">
+              <p>
+                Two binary targets were evaluated separately using fleet and
+                operational characteristics. The models explore predictive
+                signals; they do not identify causal drivers.
+              </p>
+              <figure class="poster-figure">
+                <img
+                  src="assets/models.svg"
+                  alt="Exploratory performance of the evaluated EV-use and EV-consideration models"
+                />
+              </figure>
+              <div class="grid--2-cols">
+                <div class="highlight pale">
+                  <strong>EV use</strong>
+                  <p>
+                    Random Forest with extended features: balanced accuracy ≈
+                    <strong>0.693</strong> in the supplied poster-model summary.
+                  </p>
+                </div>
+                <div class="highlight">
+                  <strong>EV consideration</strong>
+                  <p>
+                    Linear SVM, fleet baseline:
+                    <strong>ROC-AUC ≈ 0.681</strong> in the supplied
+                    poster-model summary.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section section--cream">
+            <div class="section-header">
+              <h2 class="heading-secondary">
+                06 · Key findings &amp; implications
+              </h2>
+            </div>
+
+            <div class="section-content">
+              <ul class="factor-list">
+                <li>
+                  <strong>Interest exceeds current adoption:</strong>
+                  25.0% currently use EVs, while 57.6% report consideration.
+                  Among non-users, 43.2% have considered adoption.
+                </li>
+                <li>
+                  <strong>Charging and range remain key concerns:</strong>
+                  52.5% identified charging infrastructure and 45.8% driving
+                  range as perceived barriers.
+                </li>
+                <li>
+                  <strong
+                    >Operational characteristics show predictive value:</strong
+                  >
+                  Random Forest achieved 0.726 balanced accuracy for current EV
+                  use, although model performance remains exploratory.
+                </li>
+              </ul>
+
+              <p>
+                <strong>Conclusion.</strong>
+                The findings suggest an opportunity for fleet electrification,
+                but converting interest into adoption requires evaluating
+                charging feasibility, route compatibility, and actual operating
+                costs.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="poster-footer">
+        ELECTROMOBILITY IN MEXICO
+        <span>Research poster layout · Draft content</span>
+      </footer>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) lucide.createIcons();
+      });
+    </script>
   </body>
 </html>
