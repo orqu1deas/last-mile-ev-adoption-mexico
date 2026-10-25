@@ -11,8 +11,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score, average_precision_score, balanced_accuracy_score,
     confusion_matrix, f1_score, precision_score, recall_score,
-    roc_auc_score, brier_score_loss,
-)
+    roc_auc_score, brier_score_loss)
 from sklearn.model_selection import StratifiedKFold, RandomizedSearchCV
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.pipeline import Pipeline
@@ -53,8 +52,7 @@ def estimator_specs(seed):
 def make_pipeline(features, estimator):
     categorical = Pipeline([
         ('imputer', SimpleImputer(strategy = 'constant', fill_value = 'Missing')),
-        ('one_hot', OneHotEncoder(handle_unknown = 'infrequent_if_exist', min_frequency = 2))
-    ])
+        ('one_hot', OneHotEncoder(handle_unknown = 'infrequent_if_exist', min_frequency = 2))])
     transformer = ColumnTransformer([('categorical', categorical, features)], remainder = 'drop')
     return Pipeline([('preprocess', transformer), ('model', estimator)])
 
@@ -79,8 +77,7 @@ def calculate_metrics(y, predicted, score, is_probability):
         'f1': f1_score(y, predicted, zero_division = 0), 'roc_auc': roc_auc_score(y, score) if has_both else np.nan,
         'average_precision': average_precision_score(y, score) if y.sum() else np.nan,
         'brier_score': brier_score_loss(y, score) if is_probability else np.nan,
-        'tn': int(tn), 'fp': int(fp), 'fn': int(fn), 'tp': int(tp)
-    }
+        'tn': int(tn), 'fp': int(fp), 'fn': int(fn), 'tp': int(tp)}
 
 
 def outer_splits(eligible, outcome, seed, n_outer=3):
@@ -104,8 +101,7 @@ def fit_inner_search(pipe, parameters, X_train, y_train, seed, n_inner = 3, n_it
     search = RandomizedSearchCV(
         estimator = pipe, param_distributions = parameters, n_iter = min(n_iter, available),
         scoring = 'balanced_accuracy', cv = inner, refit = True, n_jobs = 1,
-        random_state = seed, error_score = 'raise', return_train_score = False,
-    )
+        random_state = seed, error_score = 'raise', return_train_score = False)
     search.fit(X_train, y_train)
     return search.best_estimator_, search.best_params_, float(search.best_score_)
 
@@ -151,7 +147,7 @@ def evaluate(eligible, seeds = DEFAULT_SEEDS, n_outer = 3, n_inner = 3, n_iter =
     search_table = pd.DataFrame(searches)
     seed_scores = []
     group_columns = ['outcome', 'scenario', 'seed', 'model']
-    for keys, group in pred_table.groupby(group_columns, sort=False):
+    for keys, group in pred_table.groupby(group_columns, sort = False):
         if group.source_record_index.duplicated().any():
             raise AssertionError(f'OOF duplication for {keys}')
         seed_scores.append({**dict(zip(group_columns, keys)),
@@ -170,4 +166,4 @@ def evaluate(eligible, seeds = DEFAULT_SEEDS, n_outer = 3, n_inner = 3, n_iter =
 def ranking_table(summary):
     return (summary.sort_values(['outcome', 'scenario', 'balanced_accuracy_mean', 'average_precision_mean'],
                                 ascending = [True, True, False, False])
-            .assign(rank=lambda frame: frame.groupby(['outcome', 'scenario']).cumcount() + 1))
+            .assign(rank = lambda frame: frame.groupby(['outcome', 'scenario']).cumcount() + 1))
