@@ -15,7 +15,8 @@ def prevalence_table(eligible):
         n, positives = len(y), int(y.sum())
         low, high = proportion_confint(positives, n, method = 'wilson', alpha = 0.05)
         rows.append({'outcome': target, 'positive': positives, 'negative': n - positives,
-                     'n': n, 'rate': positives / n, 'wilson_95_low': low, 'wilson_95_high': high})
+                     'n': n, 'rate': positives / n, 'wilson_95_low': low,
+                     'wilson_95_high': high})
     return pd.DataFrame(rows)
 
 
@@ -49,7 +50,8 @@ def binary_exposures(eligible):
     for name, token in {
         'barrier_acquisition_cost': 'alto costo de adquisicion',
         'barrier_charging_infrastructure': 'falta de infraestructura de recarga',
-        'barrier_range': 'autonomia limitada'}.items():
+        'barrier_range': 'autonomia limitada'
+    }.items():
         df[name] = barrier_raw.map(lambda v: np.nan if not v else int(token in v))
     return df
 
@@ -61,11 +63,11 @@ def fisher_associations(eligible):
         for name in exposures:
             paired = pd.DataFrame({'exposure': exposures[name], 'outcome': eligible[target]}).dropna()
             tab = pd.crosstab(paired.exposure.astype(int), paired.outcome.astype(int)).reindex(
-                index = [0, 1], columns = [0, 1], fill_value = 0).to_numpy(dtype=int)
-            if (tab.sum(axis=0) == 0).any() or (tab.sum(axis=1) == 0).any():
+                index = [0, 1], columns = [0, 1], fill_value = 0).to_numpy(dtype = int)
+            if (tab.sum(axis = 0) == 0).any() or (tab.sum(axis = 1) == 0).any():
                 continue
             odds_ratio, pvalue = fisher_exact(tab)
-            ci = Table2x2(tab, shift_zeros=True).oddsratio_confint()
+            ci = Table2x2(tab, shift_zeros = True).oddsratio_confint()
             rows.append({'outcome': target, 'exposure': name, 'n': int(tab.sum()),
                          'exposed_positives': int(tab[1,1]), 'exposed_n': int(tab[1].sum()),
                          'unexposed_positives': int(tab[0,1]), 'unexposed_n': int(tab[0].sum()),
@@ -81,7 +83,8 @@ def fisher_associations(eligible):
 
 def sensitivity_table(original, eligible, source_indices):
     from .preprocessing import apply_cleaners
-    raw_eligible = original.loc[original.iloc[:, source_indices['eligibility']].map(normalized).eq('si')].copy()
+    raw_eligible = original.loc[
+        original.iloc[:, source_indices['eligibility']].map(normalized).eq('si')].copy()
     raw_eligible = apply_cleaners(raw_eligible, source_indices)
     result = []
     for label, frame in (('deduplicated_main', eligible),
