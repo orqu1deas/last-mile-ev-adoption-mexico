@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1036.8pt" height="511.2pt" viewBox="0 0 1036.8 511.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T01:49:48.311705</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 511.2 
+L 1036.8 511.2 
+L 1036.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 150.336 414.072 
+L 505.374655 414.072 
+L 505.374655 127.8 
+L 150.336 127.8 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 150.336 414.072 
+L 150.336 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="150.336" y="427.049539" transform="rotate(-0 150.336 427.049539)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 205.767484 414.072 
+L 205.767484 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="205.767484" y="427.049539" transform="rotate(-0 205.767484 427.049539)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 261.198968 414.072 
+L 261.198968 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="261.198968" y="427.049539" transform="rotate(-0 261.198968 427.049539)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 316.630452 414.072 
+L 316.630452 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="316.630452" y="427.049539" transform="rotate(-0 316.630452 427.049539)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 372.061936 414.072 
+L 372.061936 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="372.061936" y="427.049539" transform="rotate(-0 372.061936 427.049539)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 427.49342 414.072 
+L 427.49342 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="427.49342" y="427.049539" transform="rotate(-0 427.49342 427.049539)">100</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 482.924904 414.072 
+L 482.924904 127.8 
+" clip-path="url(#pa83ecaa854)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_7">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="482.924904" y="427.049539" transform="rotate(-0 482.924904 427.049539)">120</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_15"/>
+     <g id="text_8">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="145.336" y="165.883026" transform="rotate(-0 145.336 165.883026)">Submitted</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_16"/>
+     <g id="text_9">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="145.336" y="238.577795" transform="rotate(-0 145.336 238.577795)">Unique rows</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17"/>
+     <g id="text_10">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="145.336" y="311.272564" transform="rotate(-0 145.336 311.272564)">Eligible</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_18"/>
+     <g id="text_11">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="145.336" y="383.967333" transform="rotate(-0 145.336 383.967333)">Not eligible</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 150.336 140.812364 
+L 441.351291 140.812364 
+L 441.351291 182.97533 
+L 150.336 182.97533 
+z
+" clip-path="url(#pa83ecaa854)" style="fill: #dbe6f0"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 150.336 213.507133 
+L 405.320827 213.507133 
+L 405.320827 255.670099 
+L 150.336 255.670099 
+z
+" clip-path="url(#pa83ecaa854)" style="fill: #a3b7d5"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 150.336 286.201901 
+L 322.173601 286.201901 
+L 322.173601 328.364867 
+L 150.336 328.364867 
+z
+" clip-path="url(#pa83ecaa854)" style="fill: #6d88a6"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 150.336 358.89667 
+L 233.483226 358.89667 
+L 233.483226 401.059636 
+L 150.336 401.059636 
+z
+" clip-path="url(#pa83ecaa854)" style="fill: #1e3453"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 150.336 414.072 
+L 150.336 127.8 
+" style="fill: none; stroke: #d2dfe9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 150.336 414.072 
+L 505.374655 414.072 
+" style="fill: none; stroke: #d2dfe9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="445.611755" y="164.621386" transform="rotate(-0 445.611755 164.621386)">105</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="409.581291" y="237.316155" transform="rotate(-0 409.581291 237.316155)">92</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="326.434064" y="310.010924" transform="rotate(-0 326.434064 310.010924)">62</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="237.74369" y="382.705692" transform="rotate(-0 237.74369 382.705692)">30</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="150.336" y="116.8" transform="rotate(-0 150.336 116.8)">Screening status</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_9">
+    <path d="M 640.289345 414.072 
+L 995.328 414.072 
+L 995.328 127.8 
+L 640.289345 127.8 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_8">
+     <g id="line2d_19">
+      <path d="M 640.289345 414.072 
+L 640.289345 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20"/>
+     <g id="text_17">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="640.289345" y="427.049539" transform="rotate(-0 640.289345 427.049539)">0</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_21">
+      <path d="M 687.227295 414.072 
+L 687.227295 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22"/>
+     <g id="text_18">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="687.227295" y="427.049539" transform="rotate(-0 687.227295 427.049539)">10</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_23">
+      <path d="M 734.165245 414.072 
+L 734.165245 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24"/>
+     <g id="text_19">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="734.165245" y="427.049539" transform="rotate(-0 734.165245 427.049539)">20</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_25">
+      <path d="M 781.103195 414.072 
+L 781.103195 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26"/>
+     <g id="text_20">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="781.103195" y="427.049539" transform="rotate(-0 781.103195 427.049539)">30</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_27">
+      <path d="M 828.041145 414.072 
+L 828.041145 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28"/>
+     <g id="text_21">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="828.041145" y="427.049539" transform="rotate(-0 828.041145 427.049539)">40</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_29">
+      <path d="M 874.979096 414.072 
+L 874.979096 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30"/>
+     <g id="text_22">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="874.979096" y="427.049539" transform="rotate(-0 874.979096 427.049539)">50</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_31">
+      <path d="M 921.917046 414.072 
+L 921.917046 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32"/>
+     <g id="text_23">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="921.917046" y="427.049539" transform="rotate(-0 921.917046 427.049539)">60</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_33">
+      <path d="M 968.854996 414.072 
+L 968.854996 127.8 
+" clip-path="url(#p99eb12cbf9)" style="fill: none; stroke: #dee6ec; stroke-width: 0.85; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34"/>
+     <g id="text_24">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #1e3453" x="968.854996" y="427.049539" transform="rotate(-0 968.854996 427.049539)">70</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_5">
+     <g id="line2d_35"/>
+     <g id="text_25">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="635.289345" y="165.883026" transform="rotate(-0 635.289345 165.883026)">Eligible</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_36"/>
+     <g id="text_26">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="635.289345" y="238.577795" transform="rotate(-0 635.289345 238.577795)">Firm size</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_37"/>
+     <g id="text_27">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="635.289345" y="311.272564" transform="rotate(-0 635.289345 311.272564)">Fleet size</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_38"/>
+     <g id="text_28">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #1e3453" x="635.289345" y="383.967333" transform="rotate(-0 635.289345 383.967333)">Daily distance</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_10">
+    <path d="M 640.289345 140.812364 
+L 931.304636 140.812364 
+L 931.304636 182.97533 
+L 640.289345 182.97533 
+z
+" clip-path="url(#p99eb12cbf9)" style="fill: #dbe6f0"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 640.289345 213.507133 
+L 931.304636 213.507133 
+L 931.304636 255.670099 
+L 640.289345 255.670099 
+z
+" clip-path="url(#p99eb12cbf9)" style="fill: #a3b7d5"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 640.289345 286.201901 
+L 921.917046 286.201901 
+L 921.917046 328.364867 
+L 640.289345 328.364867 
+z
+" clip-path="url(#p99eb12cbf9)" style="fill: #6d88a6"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 640.289345 358.89667 
+L 884.366686 358.89667 
+L 884.366686 401.059636 
+L 640.289345 401.059636 
+z
+" clip-path="url(#p99eb12cbf9)" style="fill: #1e3453"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 640.289345 414.072 
+L 640.289345 127.8 
+" style="fill: none; stroke: #d2dfe9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 640.289345 414.072 
+L 995.328 414.072 
+" style="fill: none; stroke: #d2dfe9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="935.5651" y="164.621386" transform="rotate(-0 935.5651 164.621386)">62 / 62</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="935.5651" y="237.316155" transform="rotate(-0 935.5651 237.316155)">62 / 62</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="926.17751" y="310.010924" transform="rotate(-0 926.17751 310.010924)">60 / 62</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="888.62715" y="382.705692" transform="rotate(-0 888.62715 382.705692)">52 / 62</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="640.289345" y="116.8" transform="rotate(-0 640.289345 116.8)">Field completeness (eligible respondents)</text>
+   </g>
+  </g>
+  <g id="patch_16">
+   <path d="M 48.7296 21.9816 
+L 100.5696 21.9816 
+L 100.5696 11.7576 
+L 48.7296 11.7576 
+z
+" style="fill: #1e3453"/>
+  </g>
+  <g id="line2d_39">
+   <path d="M 48.7296 11.7576 
+L 1021.248 11.7576 
+" style="fill: none; stroke: #1e3453; stroke-width: 1.15; stroke-linecap: square"/>
+  </g>
+  <g id="text_34">
+   <text style="font-weight: 700; font-size: 20.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1e3453" x="48.7296" y="41.9184" transform="rotate(-0 48.7296 41.9184)">Survey eligibility and respondent coverage</text>
+  </g>
+  <g id="text_35">
+   <text style="font-size: 12.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #61748b" x="48.7296" y="67.9896" transform="rotate(-0 48.7296 67.9896)">Exact-row duplicates are excluded from the primary analytical sample.</text>
+  </g>
+  <g id="text_36">
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #61748b" x="48.7296" y="488.196" transform="rotate(-0 48.7296 488.196)">Source: Mexican small-cargo survey (105 submissions; 92 distinct rows).</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa83ecaa854">
+   <rect x="150.336" y="127.8" width="355.038655" height="286.272"/>
+  </clipPath>
+  <clipPath id="p99eb12cbf9">
+   <rect x="640.289345" y="127.8" width="355.038655" height="286.272"/>
+  </clipPath>
+ </defs>
+</svg>
