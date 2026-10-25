@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EV Adoption Research Framework</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #c1beb5;
+        font-family: "Inter", sans-serif;
+
+        padding: 40px;
+      }
+
+      .framework {
+        width: min(1100px, 95vw);
+        min-height: 650px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1.25fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        grid-template-areas:
+          "policy    policy       infrastructure"
+          "economic decision     technology"
+          "operations firm       firm";
+
+        column-gap: 65px;
+        row-gap: 50px;
+
+        position: relative;
+      }
+
+      /* =========================================
+       CATEGORY BLOCKS
+       ========================================= */
+
+      .category {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        text-align: center;
+      }
+
+      .category-title {
+        width: 100%;
+
+        background: #292929;
+        color: #ffffff;
+
+        font-size: 15px;
+        font-weight: 700;
+
+        letter-spacing: 0.4px;
+
+        padding: 11px 14px;
+
+        text-transform: uppercase;
+      }
+
+      .category-items {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        gap: 12px;
+
+        margin-top: 17px;
+      }
+
+      .category-items span {
+        font-size: 11px;
+        line-height: 1.25;
+        font-weight: 500;
+
+        max-width: 100px;
+      }
+
+      /* =========================================
+       GRID AREAS
+       ========================================= */
+
+      .policy {
+        grid-area: policy;
+        width: 70%;
+        justify-self: center;
+      }
+
+      .infrastructure {
+        grid-area: infrastructure;
+      }
+
+      .economic {
+        grid-area: economic;
+      }
+
+      .technology {
+        grid-area: technology;
+      }
+
+      .operations {
+        grid-area: operations;
+      }
+
+      .firm {
+        grid-area: firm;
+        width: 75%;
+        justify-self: center;
+        align-self: end;
+      }
+
+      /* =========================================
+       CENTRAL BLOCK
+       ========================================= */
+
+      .decision {
+        grid-area: decision;
+
+        background: #292929;
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        align-self: center;
+
+        min-height: 150px;
+
+        padding: 30px 35px;
+
+        z-index: 10;
+      }
+
+      .decision h1 {
+        font-family: "Bebas Neue", sans-serif;
+
+        font-size: clamp(38px, 5vw, 58px);
+
+        font-weight: 400;
+
+        letter-spacing: 1.2px;
+
+        line-height: 0.95;
+
+        text-align: center;
+      }
+
+      .decision p {
+        margin-top: 12px;
+
+        font-size: 11px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1.3px;
+
+        opacity: 0.65;
+      }
+
+      /* =========================================
+       CONNECTORS
+       ========================================= */
+
+      .connector {
+        position: absolute;
+
+        border-color: #292929;
+        border-style: dotted;
+
+        opacity: 0.75;
+
+        pointer-events: none;
+      }
+
+      /* top */
+      .connector-top {
+        width: 0;
+        height: 62px;
+
+        border-width: 0 0 0 2px;
+
+        top: 170px;
+        left: 50%;
+      }
+
+      /* bottom */
+      .connector-bottom {
+        width: 0;
+        height: 70px;
+
+        border-width: 0 0 0 2px;
+
+        bottom: 135px;
+        left: 50%;
+      }
+
+      /* left */
+      .connector-left {
+        width: 70px;
+        height: 0;
+
+        border-width: 2px 0 0 0;
+
+        top: 50%;
+        left: 27%;
+      }
+
+      /* right */
+      .connector-right {
+        width: 70px;
+        height: 0;
+
+        border-width: 2px 0 0 0;
+
+        top: 50%;
+        right: 27%;
+      }
+
+      /* =========================================
+       SMALL LABEL
+       ========================================= */
+
+      .dimension-label {
+        font-size: 9px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 0.7px;
+
+        margin-bottom: 8px;
+
+        color: #292929;
+      }
+
+      /* =========================================
+       RESPONSIVE
+       ========================================= */
+
+      @media (max-width: 850px) {
+        body {
+          align-items: flex-start;
+        }
+
+        .framework {
+          display: flex;
+          flex-direction: column;
+
+          min-height: auto;
+
+          gap: 28px;
+        }
+
+        .category,
+        .policy,
+        .firm {
+          width: 100%;
+        }
+
+        .decision {
+          order: -1;
+        }
+
+        .connector {
+          display: none;
+        }
+
+        .category-items {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="framework">
+      <!-- =====================
+         POLICY
+         ===================== -->
+
+      <section class="category policy">
+        <div class="dimension-label">Institutional environment</div>
+
+        <h2 class="category-title">Policy & Institutional Context</h2>
+
+        <div class="category-items">
+          <span>Regulation</span>
+          <span>Fiscal incentives</span>
+          <span>Environmental policy</span>
+          <span>Administration</span>
+        </div>
+      </section>
+
+      <!-- =====================
+         INFRASTRUCTURE
+         ===================== -->
+
+      <section class="category infrastructure">
+        <div class="dimension-label">Physical & energy systems</div>
+
+        <h2 class="category-title">Infrastructure</h2>
+
+        <div class="category-items">
+          <span>Public charging</span>
+          <span>Depot charging</span>
+          <span>Grid capacity</span>
+        </div>
+      </section>
+
+      <!-- =====================
+         ECONOMICS
+         ===================== -->
+
+      <section class="category economic">
+        <div class="dimension-label">Financial feasibility</div>
+
+        <h2 class="category-title">Economic Conditions</h2>
+
+        <div class="category-items">
+          <span>Acquisition cost</span>
+          <span>Financing</span>
+          <span>Leasing</span>
+          <span>TCO / Payback</span>
+        </div>
+      </section>
+
+      <!-- =====================
+         CENTER
+         ===================== -->
+
+      <section class="decision">
+        <h1>
+          EV Adoption
+          <br />
+          Decision
+        </h1>
+
+        <p>Freight & Last-Mile Logistics</p>
+      </section>
+
+      <!-- =====================
+         TECHNOLOGY
+         ===================== -->
+
+      <section class="category technology">
+        <div class="dimension-label">Vehicle feasibility</div>
+
+        <h2 class="category-title">Technology</h2>
+
+        <div class="category-items">
+          <span>Range</span>
+          <span>Reliability</span>
+          <span>Maintenance</span>
+          <span>Vehicle supply</span>
+        </div>
+      </section>
+
+      <!-- =====================
+         OPERATIONS
+         ===================== -->
+
+      <section class="category operations">
+        <div class="dimension-label">Operational compatibility</div>
+
+        <h2 class="category-title">Operational Context</h2>
+
+        <div class="category-items">
+          <span>Daily distance</span>
+          <span>Payload</span>
+          <span>Route structure</span>
+          <span>Stop density</span>
+        </div>
+      </section>
+
+      <!-- =====================
+         FIRM
+         ===================== -->
+
+      <section class="category firm">
+        <div class="dimension-label">Organizational characteristics</div>
+
+        <h2 class="category-title">Firm Characteristics</h2>
+
+        <div class="category-items">
+          <span>Firm size</span>
+          <span>Fleet size</span>
+          <span>Business model</span>
+          <span>Geography</span>
+          <span>Formality</span>
+        </div>
+      </section>
+
+      <!-- =====================
+         CONNECTING LINES
+         ===================== -->
+
+      <span class="connector connector-top"></span>
+      <span class="connector connector-bottom"></span>
+      <span class="connector connector-left"></span>
+      <span class="connector connector-right"></span>
+    </main>
+  </body>
+</html>
