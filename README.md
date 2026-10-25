@@ -1,208 +1,464 @@
-# Template for setting up reproducible projects
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+# Electromobility in Mexico: Last-Mile Delivery and Freight Transport
 
-*This is a template for setting up a research or data science project online, such as on GitHub.*
+Research and data science project exploring the conditions that influence the adoption of electric vehicles (EVs) in freight transportation and last-mile logistics in Mexico.
 
-## About this Repository
+The project combines **policy and regulatory analysis, firm-level survey data, qualitative evidence, and data-driven methods** to better understand the economic, operational, infrastructural, regulatory, and organizational factors shaping fleet electrification.
 
-This repository operationalises The Turing Way recommendations for structuring project repositories to support reproducibility in data science projects.
-This repository includes files and directories recommended for enabling reproducibility and collaboration in a project, as well as sharing of research objects.
+> **Status:** Work in progress.
 
-This repository follows the recommendations and guidance provided in *[The Turing Way](https://the-turing-way.netlify.app/welcome)* handbook to data science.
-When reusing this repository, please update the information on your README page with information about your project.
+> _The research questions, analytical framework, and empirical scope may evolve as additional evidence and datasets are incorporated._
 
-### Using this Repository
+---
 
-![screenshot with arrows and instructions describing how to use this repository template to create a project repo. The description provided in the title.](./assets/use-this-repo.png)
+## Research Motivation
 
-**Image Description:**
+Mexico is undergoing an important transition toward electromobility, supported by national decarbonization objectives, emerging EV manufacturing capabilities, and growing interest from logistics and transportation companies. However, **EV adoption in freight transportation and last-mile delivery remains uneven**.
 
-Your streamlined project setup is just three steps away:
-* Step 1: Click 'Use this template' on the top right-hand side. Follow it up by clicking 'Create a new repository.'
-* Step 2: In the subsequent window, set the 'owner' (yourself or a GitHub organisation) and give your project repository a descriptive name.
-* Step 3: Finalise by clicking 'Create repository' at the bottom right-hand side.
+This project investigates how these factors interact and which combinations of conditions may meaningfully accelerate EV adoption in Mexico's logistics sector.
 
-After creating your own copy of this repository, you can edit or delete existing files and folders, or add new ones as per your needs.
+---
 
-<!--If reusing this repository, delete this section -->
-## About README
+## Working Research Question
 
-On an online repository, such as GitHub, the project overview page is named ‘README’ which is equivalent to the main page of a website.
-README page should describe the project -- what is the purpose of the project, who is involved, how to collaborate and where to find key resources.
+The current overarching research question is:
 
-To learn more about how to create a README.md file, please read the [Landing Page - README File](https://the-turing-way.netlify.app/project-design/project-repo/project-repo-readme.html) chapter in The Turing Way Guide for Project Design.
+> **What regulatory, fiscal, energy, environmental, administrative, economic, and operational conditions are sufficient to accelerate the adoption of electric vehicles in freight transportation and last-mile logistics?**
 
-When reusing, you can delete most content written here, and use this MarkDown template to add content about your project:
+This question is intentionally broad at the current stage of the project and may later be divided into more specific empirical research questions.
 
+Current sub-questions include:
+
+1. **Barriers and enablers**
+   What factors most strongly encourage or discourage EV adoption among last-mile delivery operators?
+
+2. **Firm heterogeneity**
+   How do fleet size, delivery model, geographic scope, vehicle type, and organizational characteristics affect EV adoption readiness?
+
+3. **Economic feasibility**
+   What acquisition costs, financing conditions, operating costs, and investment thresholds influence firms' willingness to electrify their fleets?
+
+4. **Charging infrastructure**
+   How do operators evaluate public, depot-based, home, and alternative charging strategies?
+
+5. **Policy effectiveness**
+   Which regulatory, fiscal, energy, environmental, and administrative measures appear most relevant for reducing barriers to fleet electrification?
+
+---
+
+## Project Objectives
+
+The project aims to:
+
+- Identify the main barriers and enablers affecting EV adoption in Mexican freight and last-mile logistics.
+- Analyze how adoption conditions differ across firms, fleet sizes, vehicle types, and operating models.
+- Evaluate the role of financing, leasing, operating costs, and total cost of ownership.
+- Study the availability and perceived adequacy of charging infrastructure.
+- Examine Mexico's regulatory, fiscal, energy, environmental, and administrative framework for electromobility.
+- Compare firm-level perceptions with existing policies and modeled technological or economic feasibility.
+- Identify combinations of interventions that could create favorable conditions for EV adoption.
+- Develop reproducible analytical workflows for electromobility research.
+- Explore future applications of **data science, machine learning, optimization, and decision-support systems** for fleet electrification.
+
+---
+
+## Research Framework
+
+The project considers EV adoption as a multidimensional decision problem.
+
+Conceptually:
+
+<img src="assets/research-framework.png" width="75%">
+
+Rather than assuming that one factor—such as vehicle price or driving range—determines adoption, the project studies the interaction among these dimensions.
+
+---
+
+## Data
+
+The empirical work currently includes firm-level information from Mexican companies involved in freight transportation and last-mile delivery.
+
+Variables include, among others:
+
+### Company characteristics
+
+- company size,
+- geographic scope,
+- delivery model,
+- operational regions,
+- fleet size.
+
+### Fleet characteristics
+
+- vehicle types,
+- ownership structure,
+- leasing share,
+- vehicle utilization,
+- daily distance,
+- delivery volumes.
+
+### Economics
+
+- acquisition costs,
+- financing preferences,
+- interest rates,
+- leasing,
+- fuel expenditure,
+- maintenance expenditure,
+- operating costs.
+
+### Electromobility
+
+- current EV ownership,
+- willingness to adopt EVs,
+- perceived advantages,
+- perceived disadvantages,
+- infrastructure constraints,
+- charging preferences.
+
+### Policy and institutional context
+
+The project also documents Mexican:
+
+- laws,
+- regulations,
+- fiscal provisions,
+- electricity-sector rules,
+- environmental regulations,
+- mobility policies,
+- technical standards,
+- government strategies,
+- incentives,
+- and administrative requirements
+
+that may directly or indirectly affect electromobility.
+
+> Raw datasets may not be publicly available where confidentiality, privacy, licensing, or research agreements apply.
+
+---
+
+## Methodology
+
+The project follows an interdisciplinary research approach combining:
+
+### Literature Review
+
+Systematic collection and classification of research related to:
+
+- EV adoption,
+- freight electrification,
+- last-mile logistics,
+- total cost of ownership,
+- charging infrastructure,
+- environmental impacts,
+- logistics optimization,
+- policy instruments,
+- and electromobility in emerging markets.
+
+### Regulatory and Policy Analysis
+
+Identification and verification of Mexican legal and policy instruments relevant to electromobility.
+
+Each instrument is evaluated in terms of:
+
+- jurisdiction,
+- legal status,
+- applicability,
+- responsible authority,
+- target actors,
+- incentives or obligations,
+- implementation mechanisms,
+- and relevance for freight electrification.
+
+### Qualitative Research
+
+Semi-structured interviews are used to investigate how logistics operators interpret:
+
+- operational feasibility,
+- EV reliability,
+- charging availability,
+- financing,
+- investment risk,
+- maintenance,
+- public policy,
+- and fleet electrification strategies.
+
+### Quantitative Analysis
+
+Survey responses are analyzed through:
+
+- exploratory data analysis,
+- descriptive statistics,
+- segmentation,
+- cross-tabulation,
+- statistical modeling,
+- and visualization.
+
+### Machine Learning
+
+Exploratory predictive models may be used to investigate the relationship between firm characteristics and EV adoption consideration.
+
+Models evaluated may include:
+
+- Logistic Regression,
+- L1-Regularized Logistic Regression,
+- Decision Trees,
+- and additional interpretable models where appropriate.
+
+The purpose of these models is primarily **explanatory and exploratory**, rather than production-scale prediction.
+
+---
+
+## Current Analytical Dimensions
+
+The project currently organizes EV adoption determinants into several connected dimensions:
+
+| Dimension      | Example factors                                            |
+| -------------- | ---------------------------------------------------------- |
+| Economic       | EV price, fuel savings, TCO, interest rates, leasing       |
+| Operational    | Distance, payload, delivery density, route structure       |
+| Infrastructure | Depot charging, public charging, grid capacity             |
+| Technological  | Range, vehicle availability, reliability, maintenance      |
+| Regulatory     | Vehicle standards, mobility regulation, permitting         |
+| Fiscal         | Tax deductions, exemptions, incentives                     |
+| Environmental  | Emission reduction policies and targets                    |
+| Administrative | Permits, utility procedures, infrastructure approvals      |
+| Organizational | Fleet size, sustainability strategy, risk tolerance        |
+| Behavioral     | Manager perceptions, technology confidence, range concerns |
+
+---
+
+## Repository Structure
+
+The repository follows reproducible research and data science practices inspired by **The Turing Way** and **Cookiecutter Data Science**.
+
+```text
+electromobility-mexico/
+│
+├── README.md
+├── LICENSE
+├── CITATION.cff
+├── .gitignore
+├── requirements.txt
+│
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   ├── processed/
+│   └── external/
+│
+├── notebooks/
+│   ├── 01_data_cleaning/
+│   ├── 02_exploratory_analysis/
+│   ├── 03_statistical_analysis/
+│   ├── 04_machine_learning/
+│   └── 05_visualization/
+│
+├── src/
+│   ├── data/
+│   ├── features/
+│   ├── analysis/
+│   ├── models/
+│   └── visualization/
+│
+├── research/
+│   ├── literature/
+│   ├── regulation/
+│   ├── policy/
+│   ├── interviews/
+│   └── research_questions/
+│
+├── reports/
+│   ├── figures/
+│   ├── tables/
+│   ├── drafts/
+│   └── final/
+│
+├── references/
+│   ├── bibliography/
+│   └── legal_sources/
+│
+└── docs/
 ```
-# Project Quick Start
 
-*Add Badges/GitHub shields, which are clickable buttons that provide concise actions related to the project.*
+---
 
-*A sentence summarising what to expect from this repository*  
+## Research Roadmap
 
-## Vision and Mission
+### Phase 1 — Literature and Context
 
-- **Vision:** One sentence capturing the project's overarching vision.
-- **Mission:** One sentence defining the project's goals and target audience.
+- [x] Review electromobility literature
+- [x] Review last-mile logistics literature
+- [x] Identify EV adoption barriers and enablers
+- [x] Develop preliminary conceptual framework
+- [ ] Expand comparative international literature
 
-## About
+### Phase 2 — Mexico Regulatory Framework
 
-Motivation and background in a nutshell.
+- [x] Identify relevant Mexican legislation
+- [x] Map fiscal and regulatory incentives
+- [x] Review electricity and charging regulations
+- [ ] Build structured policy database
+- [ ] Evaluate policy implementation gaps
 
-## Roadmap & Milestones
+### Phase 3 — Firm-Level Evidence
 
-- **Goals:** Clear overview of overarching and short-term goals.
-- **Outcomes:** Description of expected results and deliverables.
+- [x] Conduct qualitative interviews
+- [x] Collect company survey responses
+- [x] Clean and standardize survey data
+- [x] Perform exploratory analysis
+- [x] Test interpretable classification models
+- [ ] Expand statistical analysis
 
-## The Team
+### Phase 4 — Integrated Analysis
 
-- **Members:** List of team members and their roles in the project.
-- **Roles & Responsibilities:** [Team Directory](link-to-directory) outlines roles, responsibilities and their ways of working.
+- [ ] Connect policy conditions with firm-level barriers
+- [ ] Identify operator archetypes
+- [ ] Compare adoption readiness across segments
+- [ ] Estimate combinations of favorable adoption conditions
+- [ ] Develop an integrated EV adoption framework
 
-## Contributing
+### Phase 5 — Decision-Support Tools
 
-- **Guidelines:** [Contribution Guidelines](link-to-guidelines) for contributors.
-- **Code of Conduct:** [Code of Conduct](link-to-coc) ensures a respectful project environment.
-- **Resource Plans:** Details on available resources and recommended practices for the project team.
+Future extensions may include:
 
-## Licensing
+- EV adoption readiness scoring,
+- fleet electrification recommendation systems,
+- total cost of ownership calculators,
+- vehicle-route compatibility analysis,
+- charging infrastructure optimization,
+- scenario simulation,
+- and interactive policy dashboards.
 
-Clearly define the license under which the repository's work is shared.
-(Example: This project is licensed under the MIT License - see the LICENSE.md file for details.)
+---
 
-## Citing & Acknowledgement
+## Potential Future Research
 
-- **Citation Instructions:** How to cite the project.
-- **Acknowledgment:** Recognising contributions by different members.
+The long-term goal is to extend the project beyond descriptive analysis toward a **data-driven decision-support framework for fleet electrification**.
+
+Possible research directions include:
+
+### EV Adoption Readiness Index
+
+Estimate the readiness of a company or fleet based on its:
+
+- operating profile,
+- financial conditions,
+- charging access,
+- route characteristics,
+- and policy environment.
+
+### Fleet–Vehicle Matching
+
+Recommend suitable electric vehicle types according to:
+
+- payload,
+- daily distance,
+- number of stops,
+- charging opportunities,
+- and route topology.
+
+### Policy Scenario Simulation
+
+Estimate how EV adoption could change under alternative interventions such as:
+
+- acquisition subsidies,
+- tax incentives,
+- preferential financing,
+- charger subsidies,
+- electricity tariffs,
+- low-emission zones,
+- or accelerated depreciation.
+
+### Cross-Country Comparison
+
+Future work may compare Mexico with other markets, particularly:
+
+- United States,
+- Colombia,
+- and other Latin American economies.
+
+This would make it possible to study how different regulatory and market environments influence fleet electrification.
+
+---
+
+## Reproducibility
+
+This repository aims to follow reproducible research practices.
+
+Where permitted, the project will provide:
+
+- documented data-processing pipelines,
+- reproducible notebooks,
+- dependency specifications,
+- source references,
+- analytical assumptions,
+- and version-controlled research outputs.
+
+Sensitive or confidential company-level information will not be publicly distributed.
+
+---
+
+## Limitations
+
+The project is exploratory and evolving.
+
+Current limitations may include:
+
+- relatively small firm-level samples,
+- non-random sampling,
+- self-reported survey responses,
+- heterogeneous company profiles,
+- limited availability of operational fleet data,
+- incomplete information about informal operators,
+- and rapidly evolving EV policies and technologies.
+
+Results should therefore be interpreted as evidence about **patterns, mechanisms, and decision factors**, rather than as nationally representative estimates of EV adoption.
+
+---
+
+## Project Status
+
+🟡 **Active Research**
+
+Current work focuses on integrating:
+
+```text
+Firm-Level Evidence
+        +
+Economic Conditions
+        +
+Operational Feasibility
+        +
+Charging Infrastructure
+        +
+Policy & Regulation
+        ↓
+Understanding EV Adoption
+in Mexico's Last-Mile Logistics
+```
+
+---
+
+## License
+
+Code, documentation, data, and research outputs may require different licenses depending on their origin and confidentiality restrictions.
+
+Licensing information will be documented as the project develops.
+
+---
+
+## Citation
+
+If this repository contributes to an academic publication, formal citation information will be added through a `CITATION.cff` file.
+
+---
+
+## Acknowledgements
+
+> This repository uses the template created and maintained by _The Turing Way_ team members and shared under CC-BY 4.0 for reuse: https://github.com/alan-turing-institute/reproducible-project-template.
+
+---
 
 ## Contact
 
-- **Reach Out:** Contact details for questions, feedback, or ideas.
-
-```
-
-
-<!--If reusing this repository, delete this section -->
-
-## Repo Structure
-
-Inspired by [Cookie Cutter Data Science](https://github.com/drivendata/cookiecutter-data-science).
-
-```
-├── LICENSE
-├── README.md          <- The top-level README for users of this project.
-├── CODE_OF_CONDUCT.md <- Guidelines for users and contributors of the project.
-├── CONTRIBUTING.md    <- Information on how to contribute to the project.
-├── data
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. The naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── project_management <- Meeting notes and other project planning resources
-│
-├── src                <- Source code for use in this project.
-│   │
-│   ├── data           <- Scripts to download or generate data
-│   │   └── make_dataset.py
-│   │
-│   ├── models         <- Scripts to train models and then use trained models to make
-│   │   │                 predictions
-│   │   ├── predict_model.py
-│   │   └── train_model.py
-│   │
-│   └── visualisation  <- Scripts to create exploratory and results-oriented visualisations
-│       └── visualise.py
-└──
-```
-
-**Maintainers**
-
-This repository has been set up and maintained by Malvika Sharan to support the work of Open Research Community Management and Research Application Management teams under the Tools, Practices and Systems Research Programme at The Alan Turing Institute.
-
-As an open source repository, anyone beyond these teams is very welcome to reuse this template for setting up their projects.
-
-*Please create [an issue](../../issues) to share references or ideas related to the development of this project.*
-
-🎯 Roadmap
----
-
-### Checklist for setting an online repository 
-
-- [ ] Add a README file
-- [ ] Add a [CONTRIBUTING](CONTRIBUTING.md) file
-- [ ] Add a [LICENSE](LICENSE.md)
-- [ ] Add a [Code of Conduct](CODE_OF_CONDUCT.md)
-- [ ] Install [all-contributors](https://allcontributors.org/) bot
-- [ ] .gitignore file (choose from a template)
-- [ ] Issue templates
-    - [ ] Optionally Install [Welcome/behavior](https://github.com/behaviorbot/welcome) bot (see The Turing Way [config](https://github.com/alan-turing-institute/the-turing-way/blob/main/.github/config.yml))
-- [ ] Create a directory with files for project management (meetings, reports, proposals)
-- [ ] Create a directory with files for communications
-- [ ] Create a directory for research analysis
-- [ ] Create a directory for research results/outcomes to share (?)
-- [ ] Create a directory for ethics approval and project policies
-- [ ] Create a directory with files for stakeholders' info and the nature of engagement
-- [ ] Connect repo with Zenodo
-- [ ] Add cff file for citation
-- [ ] Add badges
-
-📫 Contact
----
-
-For any organisation-related queries or concerns, you can directly reach out to Malvika Sharan by emailing [msharan@turing.ac.uk](mailto:msharan@turing.ac.uk).
-
-♻️ License
----
-
-This work is licensed under the MIT license (code) and Creative Commons Attribution 4.0 International license (for documentation).
-You are free to share and adapt the material for any purpose, even commercially,
-as long as you provide attribution (give appropriate credit, provide a link to the license,
-and indicate if changes were made) in any reasonable manner, but not in any way that suggests the
-licensor endorses you or your use and with no additional restrictions.
-
-🤝 Acknowledgement
----
-
-This repository has been created for anyone to reuse -- please attribute us as:
-> This repository uses the template created and maintained by *The Turing Way* team members and shared under CC-BY 4.0 for reuse: https://github.com/alan-turing-institute/reproducible-project-template.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="http://malvikasharan.github.io/"><img src="https://avatars.githubusercontent.com/u/5370471?v=4?s=100" width="100px;" alt="Malvika Sharan"/><br /><sub><b>Malvika Sharan</b></sub></a><br /><a href="#ideas-malvikasharan" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-malvikasharan" title="Content">🖋</a> <a href="https://github.com/the-turing-way/reproducible-project-template/commits?author=malvikasharan" title="Documentation">📖</a></td>
-      <td align="center"><a href="http://malvikasharan.github.io/"><img src="https://avatars.githubusercontent.com/u/5370471?v=4?s=100" width="100px;" alt="Malvika Sharan"/><br /><sub><b>Malvika Sharan</b></sub></a><br /><a href="#ideas-malvikasharan" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-malvikasharan" title="Content">🖋</a></td>
-      <td align="center"><a href="https://github.com/EKaroune"><img src="https://avatars.githubusercontent.com/u/58147174?v=4?s=100" width="100px;" alt="Emma Karoune"/><br /><sub><b>Emma Karoune</b></sub></a><br /><a href="#ideas-EKaroune" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/alan-turing-institute/reproducible-project-template/commits?author=EKaroune" title="Documentation">📖</a></td>
-      <td align="center"><a href="http://www.aleesteele.com"><img src="https://avatars.githubusercontent.com/u/18509789?v=4?s=100" width="100px;" alt="Anne Lee Steele"/><br /><sub><b>Anne Lee Steele</b></sub></a><br /><a href="#ideas-aleesteele" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/alan-turing-institute/reproducible-project-template/commits?author=aleesteele" title="Documentation">📖</a></td>
-      <td align="center"><a href="https://github.com/vhellon"><img src="https://avatars.githubusercontent.com/u/93144591?v=4?s=100" width="100px;" alt="Vicky Hellon"/><br /><sub><b>Vicky Hellon</b></sub></a><br /><a href="#ideas-vhellon" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/alan-turing-institute/reproducible-project-template/commits?author=vhellon" title="Documentation">📖</a></td>
-      <td align="center"><a href="http://jending.com"><img src="https://avatars.githubusercontent.com/u/5104098?v=4?s=100" width="100px;" alt="Jennifer Ding"/><br /><sub><b>Jennifer Ding</b></sub></a><br /><a href="#content-dingaaling" title="Content">🖋</a> <a href="https://github.com/alan-turing-institute/reproducible-project-template/commits?author=dingaaling" title="Documentation">📖</a> <a href="#ideas-dingaaling" title="Ideas, Planning, & Feedback">🤔</a></td>
-      <td align="center"><a href="http://lappland.io"><img src="https://avatars.githubusercontent.com/u/51458?v=4?s=100" width="100px;" alt="Hilmar Lapp"/><br /><sub><b>Hilmar Lapp</b></sub></a><br /><a href="https://github.com/alan-turing-institute/reproducible-project-template/issues?q=author%3Ahlapp" title="Bug reports">🐛</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+For questions, research collaboration, or feedback, please open an issue in this repository.

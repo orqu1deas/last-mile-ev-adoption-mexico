@@ -1,0 +1,171 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+16 / 18 / 20 / 24 / 28 / 32 / 40 / 48 / 56 / 64 / 72 / 84 / 96 / 112 / 128
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.5 /* Slightly tightened from 1.6 to keep poster paragraphs punchy
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #1e3453
+- Tints:
+#cea64d
+#f9f0e1
+#fdfbf7
+#a3b7d5
+
+- Shades: 
+#6d88a6
+#a3b7d5
+#cea64d
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdfbf7)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/**********************/
+/*   GENERAL DESIGNS  */
+/**********************/
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  color: #fdfbf7;
+
+  background-color: #1e3453;
+  padding: 1.2rem;
+
+  display: inline-block;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/**********************/
+/* GENERAL COMPONENTS */
+/**********************/
+
+.container {
+  margin: 1.6rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.section-content {
+  border-top: 0.75rem solid #1e3453;
+  padding: 2rem;
+}
+
+/****************************/
+/* HEADER | HEADER | HEADER */
+/****************************/
+
+header {
+  height: 12.8rem;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 3.2rem;
+
+  background-color: #1e3453;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.itesm-logo {
+  width: 9.6rem;
+  height: 9.6rem;
+  filter: saturate(0) brightness(3);
+}
+
+.heading-primary,
+.heading-tertiary {
+  color: #fdfbf7;
+}
+
+/******************************/
+/* METHODS| METHODS | METHODS */
+/******************************/
+
+.chevron-box {
+  /* Chevron right-arrow shape */
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+}
+.chevron-inner {
+  background: linear-gradient(180deg, #e6f7f8 0%, #d8f3f5 100%);
+}
