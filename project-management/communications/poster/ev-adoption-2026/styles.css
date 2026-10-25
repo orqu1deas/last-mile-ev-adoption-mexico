@@ -1,3 +1,8 @@
+/****************************************************************************
+ * ELECTROMOBILITY RESEARCH POSTER — STYLESHEET
+ * Organized by purpose. Original visual behavior and commented code retained.
+ ***************************************************************************/
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -57,115 +62,659 @@ Medium: 11px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+/****************************************************************************
+ * 01 · DESIGN TOKENS
+ * Research palette and global CSS custom properties.
+ ***************************************************************************/
+
+:root {
+  --navy: #1e3453;
+  --navy-dark: #10243c;
+  --navy-soft: #6d88a6;
+  --blue-light: #a3b7d5;
+  --gold: #cea64d;
+  --cream: #f9f0e1;
+  --paper: #fdfbf7;
+  --ink: #26354a;
+  --line: #e3e7eb;
+}
+
+/****************************************************************************
+ * 02 · RESET & TYPOGRAPHY
+ * Global box sizing, root sizing, document and text defaults.
+ ***************************************************************************/
 
 * {
-  padding: 0;
-  margin: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 html {
-  /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-/**********************/
-/*   GENERAL DESIGNS  */
-/**********************/
-
-.heading-primary {
-  font-size: 4rem;
-  font-weight: 800;
-  margin-bottom: 1.6rem;
-}
-
-.heading-secondary {
-  font-size: 3.2rem;
-  color: #fdfbf7;
-
-  background-color: #1e3453;
-  padding: 1.2rem;
-
-  display: inline-block;
-}
-
-.heading-tertiary {
-  font-size: 2rem;
-  margin-bottom: 1.6rem;
-}
-
-p {
-  font-size: 1.6rem;
+  margin: 0;
+  color: var(--ink);
+  background: #f2f3f2;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
 }
 
-/**********************/
-/* GENERAL COMPONENTS */
-/**********************/
+p {
+  margin: 0 0 1.2rem;
+  font-size: 1.45rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+/****************************************************************************
+ * 03 · PAGE & SHARED LAYOUT
+ * Page wrapper and general two-column grid.
+ ***************************************************************************/
 
 .container {
-  margin: 1.6rem;
+  margin: 0 auto;
+  padding: 1.8rem;
 }
-
-.grid {
+.grid--2-cols {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
+/****************************************************************************
+ * 04 · POSTER HEADER
+ * Brand, wordmark, typography, author information and optional badge.
+ ***************************************************************************/
 
-.grid--3-cols {
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3.2rem;
-}
-
-.section-content {
-  border-top: 0.75rem solid #1e3453;
-  padding: 2rem;
-}
-
-/****************************/
-/* HEADER | HEADER | HEADER */
-/****************************/
-
-header {
-  height: 12.8rem;
-  padding: 1.6rem 3.2rem;
-  margin-bottom: 3.2rem;
-
-  background-color: #1e3453;
-
-  display: flex;
-  justify-content: space-around;
+/* Header: gradient, rounded corners and a very subtle dotted texture */
+.poster-header {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1fr) minmax(0, 3.5fr) minmax(13rem, 1fr);
   align-items: center;
-  gap: 1.6rem;
+  gap: 2rem;
+  min-height: 20rem;
+  padding: 2.8rem 3rem;
+  margin-bottom: 2.4rem;
+  border-radius: 1.4rem;
+  color: white;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.105) 1px, transparent 1.2px),
+    linear-gradient(115deg, #10243c 0%, #1e3453 56%, #15283f 100%);
+  background-size:
+    19px 19px,
+    cover;
+  box-shadow:
+    0 4px 0 var(--gold),
+    0 1.2rem 2.8rem rgba(16, 36, 60, 0.12);
 }
-
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.3rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.09); */
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
 .itesm-logo {
-  width: 9.6rem;
-  height: 9.6rem;
-  filter: saturate(0) brightness(3);
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0) invert(1);
+}
+.title-text {
+  text-align: center;
+}
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: #f0cb78;
+}
+h1 {
+  max-width: 84rem;
+  margin: 0.6rem auto 1.25rem;
+  font:
+    700 clamp(2.6rem, 2.5vw, 4.2rem)/1.18 "Merriweather",
+    serif;
+  letter-spacing: -0.045rem;
+}
+.authors {
+  margin: 0 0 0.4rem;
+  font-size: 1.45rem;
+}
+.authors sup,
+.department sup {
+  font-size: 0.9rem;
+}
+.department {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #dce6ef;
+}
+.header-detail {
+  justify-self: end;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 13rem;
+  padding: 1.7rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  display: none;
+}
+.header-detail span {
+  color: #efd18b;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.header-detail strong {
+  font:
+    700 2.8rem "Merriweather",
+    serif;
+}
+.header-detail small {
+  color: #e0e8ee;
+  font-size: 1.05rem;
 }
 
-.heading-primary,
-.heading-tertiary {
-  color: #fdfbf7;
+/****************************************************************************
+ * 05 · EDITORIAL GRID & SECTIONS
+ * Three-column poster structure, cream variations, tab headings and content.
+ ***************************************************************************/
+
+/* Editorial section labels with a continuous rule */
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 2.4rem;
+}
+.column {
+  display: grid;
+  align-content: start;
+  gap: 0rem;
+}
+.section {
+  min-width: 0;
+  padding: 1.6rem;
+  border: 0px solid #dce2e9;
+  border-radius: 0.9rem;
+}
+.section--cream {
+  border-color: #ebdfc2;
+}
+.section--cream .section-content {
+  background: linear-gradient(135deg, #fffaf0, #f9edce);
+  padding: 1.3rem;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-/******************************/
-/* METHODS| METHODS | METHODS */
-/******************************/
-
-.chevron-box {
-  /* Chevron right-arrow shape */
-  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+.heading-secondary {
+  padding: 1.35rem 1.35rem 0.75rem;
+  background: var(--navy);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
-.chevron-inner {
-  background: linear-gradient(180deg, #e6f7f8 0%, #d8f3f5 100%);
+.section-content {
+  padding: 0.8rem 0.8rem;
+  background: #fff;
+  box-shadow: 0 0.2rem 0.4rem rgba(20, 40, 70, 0.04);
+  border-top: 0.8rem solid var(--navy);
+  border-radius: 0 0.5rem;
+}
+.section-content > :last-child {
+  margin-bottom: 0;
+}
+/****************************************************************************
+ * 06 · HIGHLIGHTS & LISTS
+ * Emphasis blocks, numbered lists, and list-item markers.
+ ***************************************************************************/
+
+.highlight {
+  margin-top: 1.5rem;
+  padding: 1.35rem 1.5rem;
+  border-left: 0.4rem solid var(--gold);
+  background: var(--cream);
+  border-radius: 0 0.6rem 0.6rem 0;
+}
+.highlight strong {
+  margin-bottom: 0.45rem;
+  color: var(--navy);
+  font-size: 1.3rem;
+}
+.highlight p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.highlight.pale {
+  background: #f3f6fa;
+  border-color: var(--navy-soft);
+}
+.numbered-list {
+  margin: 0;
+  padding-left: 2.2rem;
+  font-size: 1.4rem;
+}
+.numbered-list li {
+  padding-left: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+.numbered-list li::marker {
+  color: #aa822e;
+  font-weight: 800;
+}
+.numbered-list li:last-child {
+  margin-bottom: 0;
+}
+/****************************************************************************
+ * 07 · SEGMENTS & ICONS
+ * Advantages, disadvantages, and compact explanatory text.
+ ***************************************************************************/
+
+.segment {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin: 0 0 1.5rem;
+}
+.segment-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 4rem;
+  height: 4rem;
+  border-radius: 0.65rem;
+  background: #eaf0f7;
+  color: var(--navy);
+}
+.segment-icon svg,
+.finding svg,
+.empty-results svg {
+  width: 2rem;
+  height: 2rem;
+}
+h3 {
+  font-size: 1.35rem;
+  color: var(--navy);
+}
+.segment p,
+.finding p {
+  margin: 0.3rem 0 0;
+  font-size: 1.25rem;
+}
+.footnote,
+.visual-label {
+  color: #657083;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/****************************************************************************
+ * 08 · METHOD WORKFLOW
+ * Three-step arrow workflow and its visual treatments.
+ ***************************************************************************/
+
+.workflow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 1.6rem 0;
+}
+.step {
+  position: relative;
+  min-height: 17rem;
+  padding: 1.4rem 1.2rem 1.4rem 1.6rem;
+  background: #e6ebf2;
+  /* border: 0.2rem solid var(--navy-soft); */
+  clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%, 10% 50%);
+  text-align: center;
+}
+.step:first-child {
+  clip-path: polygon(0 0, 87% 0, 100% 50%, 87% 100%, 0 100%);
+}
+.step:nth-child(2) {
+  background: #f6e9c9;
+  border-color: var(--gold);
+}
+.step > span {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #967126;
+}
+.step svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--navy);
+}
+.step h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.step p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+/****************************************************************************
+ * 09 · FIGURES & VISUAL COMPONENTS
+ * Image containers, cropped visuals, statistics, and small charts.
+ ***************************************************************************/
+
+.visual-placeholder {
+  padding: 0.5rem;
+  border: 1px solid #e4e9ef;
+  border-radius: 0.8rem;
+  background: #f7f9fc;
+}
+
+.cut-image {
+  clip-path: inset(0px 0px 20px 0px);
+  margin-bottom: -20px;
+  /* Opcional: recupera el espacio vacío que deja el recorte en el layout */
+}
+.poster-figure {
+  margin: 9px 0;
+}
+.poster-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #edf0f4;
+  border-radius: 3px;
+}
+.poster-figure figcaption {
+  font-family: Inter, Arial, sans-serif;
+  color: #64768d;
+  font-size: 10px;
+  line-height: 1.35;
+  margin-top: 5px;
+  font-style: italic;
+}
+.twostat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.twostat div {
+  background: #e8eef6;
+  padding: 10px;
+  border-radius: 4px;
+}
+.twostat div:nth-child(2) {
+  background: #f7eacd;
+}
+.twostat strong {
+  font-size: 29px;
+  line-height: 1.1;
+  display: block;
+  color: var(--navy);
+}
+.twostat span {
+  font-size: 11px;
+}
+.mini-chart {
+  display: grid;
+  gap: 1.1rem;
+}
+.mini-chart div {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.mini-chart b {
+  display: block;
+  width: var(--level);
+  height: 1.5rem;
+  background: linear-gradient(90deg, var(--navy-soft), var(--gold));
+  border-radius: 0.2rem;
+}
+.visual-label {
+  margin: 1.4rem 0 0;
+  text-align: center;
+}
+/****************************************************************************
+ * 10 · FINDINGS, CONCLUSIONS & REFERENCES
+ * Reusable insight blocks and evidence notes.
+ ***************************************************************************/
+
+.empty-results {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  border: 1px dashed #acbcd0;
+  background: #f4f7fa;
+  border-radius: 0.65rem;
+}
+.empty-results > svg {
+  flex: 0 0 2.4rem;
+  color: var(--navy-soft);
+}
+.empty-results strong {
+  font-size: 1.3rem;
+}
+.empty-results p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 0;
+}
+.finding {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  margin: 0 0 0.9rem;
+  border-left: 0.35rem solid var(--gold);
+  background: #f8f8f7;
+  border-radius: 0.4rem;
+}
+.finding svg {
+  flex: 0 0 2rem;
+  color: #b48c35;
+}
+.finding strong {
+  font-size: 1.3rem;
+  color: var(--navy);
+}
+.conclusion .section-content {
+  background: #fff9ec;
+  padding: 1.2rem;
+  border-left: 0.3rem solid var(--gold);
+}
+.references p {
+  margin-bottom: 1rem;
+  font-size: 1.12rem;
+}
+/****************************************************************************
+ * 11 · FOOTER & ADDITIONAL UTILITIES
+ * Footer, compact labels, and supplemental figure text.
+ ***************************************************************************/
+
+.poster-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.2rem;
+  padding: 1.2rem 0.2rem;
+  border-top: 2px solid var(--gold);
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+.poster-footer span {
+  color: #687385;
+  font-weight: 500;
+}
+.note strong,
+.insight b,
+.caution strong {
+  font-size: 12px;
+  color: var(--navy);
+}
+.note p,
+.insight p,
+.caution p {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+.micro {
+  font-size: 10.5px !important;
+  font-style: italic;
+  color: #64758a;
+  margin-top: 12px !important;
+}
+figure {
+  margin: 10px 0 0;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+figcaption {
+  font-size: 10px;
+  color: #657891;
+  font-style: italic;
+  line-height: 1.35;
+}
+/****************************************************************************
+ * 12 · TABLET BREAKPOINT
+ * Two-column layout for medium-width screens.
+ ***************************************************************************/
+
+@media (max-width: 1100px) {
+  .poster-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .poster-grid > .column:last-child {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+  .poster-header {
+    grid-template-columns: 1fr 3fr;
+  }
+  .header-detail {
+    display: none;
+  }
+}
+/****************************************************************************
+ * 13 · MOBILE BREAKPOINT
+ * Single-column layout for small screens.
+ ***************************************************************************/
+
+@media (max-width: 680px) {
+  html {
+    font-size: 59%;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .poster-header {
+    grid-template-columns: 1fr;
+    padding: 2.4rem 1.4rem;
+  }
+  .brand {
+    justify-self: center;
+  }
+  .poster-grid,
+  .poster-grid > .column:last-child {
+    grid-template-columns: 1fr;
+  }
+  .poster-grid > .column:last-child {
+    grid-column: auto;
+  }
+  .poster-grid,
+  .column {
+    gap: 1.5rem;
+  }
+  .workflow {
+    gap: 0.45rem;
+  }
+  .step {
+    padding: 1.2rem 0.5rem;
+  }
+  .poster-footer {
+    flex-direction: column;
+  }
+}
+/****************************************************************************
+ * 14 · PRINT LAYOUT
+ * A1 landscape poster printing with preserved colors.
+ ***************************************************************************/
+
+@media print {
+  @page {
+    size: A1 landscape;
+    margin: 9mm;
+  }
+  html {
+    font-size: 85%;
+  }
+  body {
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+  .poster-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .poster-grid > .column:last-child {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+  .poster-header {
+    grid-template-columns: 1fr 3.5fr 1fr;
+  }
+  .header-detail {
+    display: flex;
+  }
+  .section {
+    break-inside: avoid;
+  }
+}
+
+/****************************************************************************
+ * 15 · BULLET LIST TYPOGRAPHY
+ * Additional list styles retained in original cascade position.
+ ***************************************************************************/
+
+.factor-list {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+}
+.factor-list li {
+  margin-bottom: 0.65rem;
 }

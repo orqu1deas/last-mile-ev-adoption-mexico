@@ -1,0 +1,121 @@
+outcome,scenario,seed,outer_fold,model,inner_balanced_accuracy,best_parameters
+ev_consideration,fleet_baseline,17,1,dummy,,{}
+ev_consideration,fleet_baseline,17,1,logistic_l2,0.6259469696969697,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,17,1,linear_svm,0.5981691919191919,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,17,1,random_forest,0.5236742424242424,"{""model__max_depth"": 3, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,17,1,lightgbm,0.6202651515151515,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 5.0}"
+ev_consideration,fleet_baseline,17,2,dummy,,{}
+ev_consideration,fleet_baseline,17,2,logistic_l2,0.5549242424242424,"{""model__C"": 0.1}"
+ev_consideration,fleet_baseline,17,2,linear_svm,0.6089015151515151,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,17,2,random_forest,0.48390151515151514,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 3, ""model__n_estimators"": 200}"
+ev_consideration,fleet_baseline,17,2,lightgbm,0.5757575757575757,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 40, ""model__num_leaves"": 5, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,17,3,dummy,,{}
+ev_consideration,fleet_baseline,17,3,logistic_l2,0.5482954545454546,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,17,3,linear_svm,0.5710227272727273,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,17,3,random_forest,0.5,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 8, ""model__n_estimators"": 200}"
+ev_consideration,fleet_baseline,17,3,lightgbm,0.5918560606060606,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 2, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,17,1,dummy,,{}
+ev_consideration,operational_extended,17,1,logistic_l2,0.6126893939393939,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,17,1,linear_svm,0.5779671717171717,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,17,1,random_forest,0.5293560606060606,"{""model__max_depth"": 3, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,17,1,lightgbm,0.5577651515151515,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 2, ""model__reg_lambda"": 5.0}"
+ev_consideration,operational_extended,17,2,dummy,,{}
+ev_consideration,operational_extended,17,2,logistic_l2,0.7111742424242424,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,17,2,linear_svm,0.6335227272727273,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,17,2,random_forest,0.6022727272727273,"{""model__max_depth"": 3, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 5, ""model__n_estimators"": 200}"
+ev_consideration,operational_extended,17,2,lightgbm,0.6070075757575757,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 40, ""model__num_leaves"": 5, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,17,3,dummy,,{}
+ev_consideration,operational_extended,17,3,logistic_l2,0.6571969696969696,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,17,3,linear_svm,0.6259469696969696,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,17,3,random_forest,0.5,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 8, ""model__n_estimators"": 200}"
+ev_consideration,operational_extended,17,3,lightgbm,0.5877525252525253,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 6, ""model__n_estimators"": 40, ""model__num_leaves"": 2, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,42,1,dummy,,{}
+ev_consideration,fleet_baseline,42,1,logistic_l2,0.5972222222222222,"{""model__C"": 2.0}"
+ev_consideration,fleet_baseline,42,1,linear_svm,0.6057449494949494,"{""model__C"": 0.1}"
+ev_consideration,fleet_baseline,42,1,random_forest,0.5744949494949494,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 5, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,42,1,lightgbm,0.591540404040404,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,42,2,dummy,,{}
+ev_consideration,fleet_baseline,42,2,logistic_l2,0.6174242424242424,"{""model__C"": 2.0}"
+ev_consideration,fleet_baseline,42,2,linear_svm,0.5577651515151516,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,42,2,random_forest,0.5,"{""model__max_depth"": 3, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 8, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,42,2,lightgbm,0.4820075757575757,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 40, ""model__num_leaves"": 3, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,42,3,dummy,,{}
+ev_consideration,fleet_baseline,42,3,logistic_l2,0.5284090909090909,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,42,3,linear_svm,0.5391414141414141,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,42,3,random_forest,0.670770202020202,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,42,3,lightgbm,0.670770202020202,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,42,1,dummy,,{}
+ev_consideration,operational_extended,42,1,logistic_l2,0.49116161616161613,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,42,1,linear_svm,0.5280934343434343,"{""model__C"": 2.0}"
+ev_consideration,operational_extended,42,1,random_forest,0.523989898989899,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 5, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,42,1,lightgbm,0.5744949494949494,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 6, ""model__n_estimators"": 40, ""model__num_leaves"": 3, ""model__reg_lambda"": 5.0}"
+ev_consideration,operational_extended,42,2,dummy,,{}
+ev_consideration,operational_extended,42,2,logistic_l2,0.7007575757575757,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,42,2,linear_svm,0.6505681818181819,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,42,2,random_forest,0.5776515151515151,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,42,2,lightgbm,0.5464015151515151,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 6, ""model__n_estimators"": 80, ""model__num_leaves"": 2, ""model__reg_lambda"": 5.0}"
+ev_consideration,operational_extended,42,3,dummy,,{}
+ev_consideration,operational_extended,42,3,logistic_l2,0.603219696969697,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,42,3,linear_svm,0.6240530303030303,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,42,3,random_forest,0.6038510101010102,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,42,3,lightgbm,0.6609848484848485,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,43,1,dummy,,{}
+ev_consideration,fleet_baseline,43,1,logistic_l2,0.46717171717171724,"{""model__C"": 0.1}"
+ev_consideration,fleet_baseline,43,1,linear_svm,0.4264520202020202,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,43,1,random_forest,0.5517676767676767,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 5, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,43,1,lightgbm,0.557449494949495,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 80, ""model__num_leaves"": 2, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,43,2,dummy,,{}
+ev_consideration,fleet_baseline,43,2,logistic_l2,0.5672348484848484,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,43,2,linear_svm,0.631628787878788,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,43,2,random_forest,0.5464015151515151,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 5, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,43,2,lightgbm,0.5918560606060607,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 6, ""model__n_estimators"": 40, ""model__num_leaves"": 5, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,43,3,dummy,,{}
+ev_consideration,fleet_baseline,43,3,logistic_l2,0.4933712121212121,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,43,3,linear_svm,0.516729797979798,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,43,3,random_forest,0.5,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 8, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,43,3,lightgbm,0.3456439393939394,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 5.0}"
+ev_consideration,operational_extended,43,1,dummy,,{}
+ev_consideration,operational_extended,43,1,logistic_l2,0.5154671717171717,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,43,1,linear_svm,0.5088383838383839,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,43,1,random_forest,0.492739898989899,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 5, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,43,1,lightgbm,0.5069444444444444,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 80, ""model__num_leaves"": 2, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,43,2,dummy,,{}
+ev_consideration,operational_extended,43,2,logistic_l2,0.4384469696969697,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,43,2,linear_svm,0.5359848484848484,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,43,2,random_forest,0.5236742424242424,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 5, ""model__n_estimators"": 200}"
+ev_consideration,operational_extended,43,2,lightgbm,0.5464015151515151,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 6, ""model__n_estimators"": 40, ""model__num_leaves"": 5, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,43,3,dummy,,{}
+ev_consideration,operational_extended,43,3,logistic_l2,0.45012626262626265,"{""model__C"": 2.0}"
+ev_consideration,operational_extended,43,3,linear_svm,0.37720959595959597,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,43,3,random_forest,0.5,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 8, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,43,3,lightgbm,0.4482323232323232,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 5.0}"
+ev_consideration,fleet_baseline,123,1,dummy,,{}
+ev_consideration,fleet_baseline,123,1,logistic_l2,0.5268308080808082,"{""model__C"": 0.5}"
+ev_consideration,fleet_baseline,123,1,linear_svm,0.45580808080808083,"{""model__C"": 2.0}"
+ev_consideration,fleet_baseline,123,1,random_forest,0.4678030303030303,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,123,1,lightgbm,0.4678030303030303,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 40, ""model__num_leaves"": 3, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,123,2,dummy,,{}
+ev_consideration,fleet_baseline,123,2,logistic_l2,0.662878787878788,"{""model__C"": 2.0}"
+ev_consideration,fleet_baseline,123,2,linear_svm,0.662878787878788,"{""model__C"": 0.1}"
+ev_consideration,fleet_baseline,123,2,random_forest,0.5577651515151516,"{""model__max_depth"": 3, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 5, ""model__n_estimators"": 200}"
+ev_consideration,fleet_baseline,123,2,lightgbm,0.6856060606060607,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 40, ""model__num_leaves"": 2, ""model__reg_lambda"": 1.0}"
+ev_consideration,fleet_baseline,123,3,dummy,,{}
+ev_consideration,fleet_baseline,123,3,logistic_l2,0.6379419191919192,"{""model__C"": 2.0}"
+ev_consideration,fleet_baseline,123,3,linear_svm,0.6379419191919192,"{""model__C"": 2.0}"
+ev_consideration,fleet_baseline,123,3,random_forest,0.5514520202020202,"{""model__max_depth"": 2, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 5, ""model__n_estimators"": 100}"
+ev_consideration,fleet_baseline,123,3,lightgbm,0.6625631313131313,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,123,1,dummy,,{}
+ev_consideration,operational_extended,123,1,logistic_l2,0.5031565656565657,"{""model__C"": 2.0}"
+ev_consideration,operational_extended,123,1,linear_svm,0.5031565656565657,"{""model__C"": 0.5}"
+ev_consideration,operational_extended,123,1,random_forest,0.5224116161616161,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 3, ""model__n_estimators"": 100}"
+ev_consideration,operational_extended,123,1,lightgbm,0.4996843434343435,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 6, ""model__n_estimators"": 80, ""model__num_leaves"": 3, ""model__reg_lambda"": 5.0}"
+ev_consideration,operational_extended,123,2,dummy,,{}
+ev_consideration,operational_extended,123,2,logistic_l2,0.5823863636363636,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,123,2,linear_svm,0.5946969696969697,"{""model__C"": 0.1}"
+ev_consideration,operational_extended,123,2,random_forest,0.5179924242424243,"{""model__max_depth"": 3, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 5, ""model__n_estimators"": 200}"
+ev_consideration,operational_extended,123,2,lightgbm,0.540719696969697,"{""model__learning_rate"": 0.1, ""model__min_child_samples"": 3, ""model__n_estimators"": 40, ""model__num_leaves"": 2, ""model__reg_lambda"": 1.0}"
+ev_consideration,operational_extended,123,3,dummy,,{}
+ev_consideration,operational_extended,123,3,logistic_l2,0.44886363636363635,"{""model__C"": 2.0}"
+ev_consideration,operational_extended,123,3,linear_svm,0.5151515151515151,"{""model__C"": 2.0}"
+ev_consideration,operational_extended,123,3,random_forest,0.49936868686868685,"{""model__max_depth"": 2, ""model__max_features"": 0.7, ""model__min_samples_leaf"": 3, ""model__n_estimators"": 200}"
+ev_consideration,operational_extended,123,3,lightgbm,0.44886363636363635,"{""model__learning_rate"": 0.03, ""model__min_child_samples"": 3, ""model__n_estimators"": 40, ""model__num_leaves"": 5, ""model__reg_lambda"": 5.0}"
